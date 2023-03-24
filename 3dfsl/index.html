@@ -1,241 +1,248 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 
-    <!-- Basic Page Needs
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    
-    <title>3DFSL
-    </title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DFSL</title>
+  <link rel="icon" href="public/favicon.ico" mce_href="public/favicon.ico" type="image/x-icon">
+  <link href="src/css/bootstrap.min.css" rel="stylesheet">
+  <link href="src/css/slick.css" rel="stylesheet">
+  <link href="src/css/slick-theme.css" rel="stylesheet">
+  <link href="src/css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-    <!-- Mobile Specific Metas
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
 
-    <!-- FONT
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="./source/css" rel="stylesheet" type="text/css">
 
-    <!-- CSS
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="./source/normalize.css">
-    <link rel="stylesheet" href="./source/skeleton.css">
-    <link rel="stylesheet" href="./source/footable.standalone.min.css">
-
-    <!-- Favicon
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="icon" type="image/png" href="https://hkust-vgd.github.io/scanobjectnn/images/favicon.png"> -->
-
-    <!-- Google icon -->
-    <link rel="stylesheet" href="./source/icon">
-
-    <!-- Analytics -->
-    <script async="" src="./source/analytics.js"></script><script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-86869673-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" async></script>
-    <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
-    <style>
-      img {
-          display: block;
-      }
-
-      .column-50 {
-          float: left;
-          width: 50%;
-      }
-      .row-50:after {
-          content: "";
-          display: table;
-          clear: both;
-      }
-
-      .floating-teaser {
-          float: left;
-          width: 30%;
-          text-align: center;
-          padding: 15px;
-      }
-      .venue strong {
-          color: #99324b;
-      }
-
-      .benchmark {
-          width: 100%;
-          max-width: 960px;
-          overflow: scroll;
-          overflow-y: hidden;
-      }
-
-    </style>
-  </head>
-  <body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
-
-    <!-- Primary Page Layout
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- highlight -->
+  <section class=" pt-5 text-center justify-content-between align-items-center">
     <div class="container">
-      <h4 style="text-align:center">A Closer Look at Few-Shot 3D Point Cloud Classification</h4>
-      <p align="center" ,="" style="margin-bottom:12px;">
-        <!-- <a class="simple" href="https://cgye96.github.io/">Chuangguan Ye</a><sup>1</sup> -->
-        <a class="simple">Chuangguan Ye</a><sup>1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" >Hongyaun Zhu</a><sup>2</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" >Bo Zhang</a><sup>3</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" >Tao Chen</a><sup>1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </p>
-
-      <p align="center" style="margin-bottom:20px;">
-        <sup>1</sup>Fudan University
-        <span style="display:inline-block; width: 32px"></span>
-        <sup>2</sup>A*STAR 
-        <span style="display:inline-block; width: 32px"></span>
-        <sup>3</sup>Shanghai AI Laboratory
-        <span style="display:inline-block; width: 32px"></span>
-        <br>
-        <br>
-      </p>
-
-      <!-- <div class="venue">
-        <p align="center"> ''</strong> </p>
+      <!-- project name -->
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-5">A Closer Look at Few-Shot 3D Point Cloud Classification</h1>
+        </div>
+      </div>
+      <!-- conference -->
+      <!-- <div class="row mt-3 d-md-flex fs-4 fw-bold">
+        <div class="col-md-4 offset-md-4">
+          <a href="https://cvpr2023.thecvf.com">CVPR 2023</a>
+        </div>
       </div> -->
+      <!-- authors -->
+      <div class="authors row mt-3 fs-5">
+        <div class="col-md-2 offset-md-2 ">
+          Chuangguan Ye<sup>1</sup>
+        </div>
+        <div class="col-md-2">
+          Hongyaun Zhu<sup>2</sup>
+        </div>
+        <div class="col-md-2">
+          Bo Zhang<sup>3</sup>
+        </div>
+        <div class="col-md-2">
+          Tao Chen<sup>1*</sup>
+        </div>
 
-      <figure>
-        <img src="./source/figs/fig1_1.png" style="width:100%">
-        <!-- <br> -->
-      </figure>
-
-      <div class="caption">
-        <b>The challenges of few-shot 3D point cloud classification.</b>  
-        <b>(a)</b> is the T-SNE on ImageNet and ShapeNet using pre-trained 2D image
-         and 3D point cloud features respectively with the “Mailbox” class highlighted. 
-         <b>(b)</b> shows the mean normalized Euclidean distance between each example 
-        and its class prototype in the visual and point cloud embedding space, respectively. 
-        The embedding quality of 2D visual domain is much higher than 3D point cloud domains
-        because image-based pre-trained models, such as ResNet, use deeper networks trained 
-        on millions of images, whereas point cloud-based models, such as PointNet, 
-        use shallower networks trained on only a few hundred point clouds with subtle inter-class 
-        differences and high intra-class variations.
       </div>
-
-      <br>
-
-      <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
-        <h5>Abstract</h5>
-        <p align="justify">
-          In recent years, research on few-shot learning (FSL) has been fast-growing in the 2D image domain due to the less requirement for labeled training data and greater generalization for novel classes.
-          However, its application in 3D point cloud data is relatively under-explored. Not only need to distinguish unseen classes as in the 2D domain, 3D FSL is more challenging in terms of irregular structures, 
-          subtle inter-class differences, and high intra-class variances {when trained on a low number of data.} Moreover, different architectures and learning algorithms make it difficult to study the effectiveness 
-          of existing 2D FSL algorithms when migrating to the 3D domain. In this work, for the first time, we perform systematic and extensive investigations of directly applying recent 2D FSL works to 3D point cloud 
-          related backbone networks and thus suggest a strong learning baseline for few-shot 3D point cloud classification. Furthermore, we propose a new network, Point-cloud Correlation Interaction (PCIA), 
-          with three novel plug-and-play components called Salient-Part Fusion (SPF) module, Self-Channel Interaction Plus (SCI+) module, and Cross-Instance Fusion Plus (CIF+) module to obtain more representative 
-          embeddings and improve the feature distinction. {These modules can be inserted into most FSL algorithms with minor changes and significantly improve the performance. Experimental results on three benchmark datasets, 
-          ModelNet40-FS, ShapeNet70-FS, and ScanObjectNN-FS, demonstrate that our method achieves state-of-the-art performance for the 3D FSL task.
-          <br>
-          <br>
-        </p>
+      <!-- authors facilities -->
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="row mt-3 d-md-flex fs-4">
+            <div class="col-md-4 facilities ">
+              <!-- <img src="public/Fudan_University_Logo.png" class="img-fluid">  -->
+              <sup>1</sup>Fudan
+              University
+            </div>
+            <div class="col-md-4 facilities">
+              <sup>2</sup>A*STAR
+            </div>
+            <div class="col-md-4 facilities">
+              <sup>3</sup>Shanghai AI Laboratory
+            </div>
+          </div>
+        </div>
       </div>
-
-
-    <!-- -->
-    <div class="section">
-      <h5> Datasets for 3D FSL</h5>
-      <p>
-      We introduce three new splits of 3D datasets for 3D few-shot point cloud classification under different scenarios, including  ModelNet40-FS, ShapeNet70-FS and ScanObjectNN-FS.
-      Statistics of the new split datasets for few-shot 3D point cloud classification are listed in the Table I. More details can be referred to <a href="https://github.com/cgye96/fsl3d">here</a> and our paper.
-      </p>
-      <div class="Datasets for 3D FSL">
-          <table class="table footable footable-1 breakpoint-lg" align-items="center" style="display: table; width:70% ;height:100%; margin: auto;">
-            
-          <thead>
-            <tr class="footable-header">
-            <th style="display: table-cell;">Datasets for 3D FSL</th> 
-            <th style="display: table-cell;">Split</th>
-            <th style="display: table-cell;">Train</th>
-            <th style="display: table-cell;">Test</th>
-            <th style="display: table-cell;">Total</th> </tr>
-          </thead>
-          <tbody>
-            <th rowspan = "2"  class="footable-first-visible" style="display: table-cell;">ModelNet40-FS</th> 
-            <td style="display: table-cell;">Classes</td>
-            <td style="display: table-cell;">30</td>
-            <td style="display: table-cell;">10</td>
-            <td style="display: table-cell;">40</td> </tr>
-            <td style="display: table-cell;">Instance</td>
-            <td style="display: table-cell;">9,204</td>
-            <td style="display: table-cell;">3,104</td>
-            <td style="display: table-cell;">12,308</td></tr>
-
-            <th rowspan = "3" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th>
-            <td style="display: table-cell;">Categories</td>
-            <td style="display: table-cell;">34</td>
-            <td style="display: table-cell;">14</td>
-            <td style="display: table-cell;">48</td> <tr>
-            <td style="display: table-cell;">Classes</td>
-            <td style="display: table-cell;">50</td>
-            <td style="display: table-cell;">20</td>
-            <td style="display: table-cell;">70</td> <tr>
-            <td style="display: table-cell;">Instance</td>
-            <td style="display: table-cell;">21,722</td>
-            <td style="display: table-cell;">8,351</td>
-            <td style="display: table-cell;">30,073</td><tr>
-
-            <th rowspan = "5" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th> 
-            <td style="display: table-cell;">Classes</td>
-            <td style="display: table-cell;">10</td>
-            <td style="display: table-cell;">5</td>
-            <td style="display: table-cell;">15</td> <tr>
-            <td style="display: table-cell;">Instance (Split 0)</td>
-            <td style="display: table-cell;">50</td>
-            <td style="display: table-cell;">20</td>
-            <td style="display: table-cell;">70</td> <tr>
-            <td style="display: table-cell;">Instance (Split 1)</td>
-            <td style="display: table-cell;">21,722</td>
-            <td style="display: table-cell;">8,351</td>
-            <td style="display: table-cell;">30,073</td><tr>
-            <td style="display: table-cell;">Instance (Split 2)</td>
-            <td style="display: table-cell;">21,722</td>
-            <td style="display: table-cell;">8,351</td>
-            <td style="display: table-cell;">30,073</td>
-        </table>
-      </div> 
-      <p> <center>Table I</center></p>
+      <!-- outlink buttoms -->
+      <div class="row mt-3 ">
+        <div class="col-md-8 offset-md-2 ">
+          <a type="button" class="btn btn-outline-secondary waves-effect rounded-0"
+            href="https://link.springer.com/article/10.1007/s11263-022-01731-4"><i class="bi bi-journal"></i>
+            Paper</a>
+          <a type="button" class="btn btn-outline-secondary waves-effect rounded-0" href="https://github.com/">
+            <i class="bi bi-github"></i>
+            Code
+          </a>
+        </div>
+      </div>
+      <hr class="divider" />
     </div>
-    <br>
-    <br>
-**frrrrgtfffreftf7\ewwwwwwwwwwwwwwww
-、
-        <!-- -->
-        <div class="section">
-          <h5> Empirical Study</h5>
-          <p>
-          We perform empirical study of recent state-of-the-art (SOTA) few-shot learning methods on point cloud data with different
-           popular point-based network backbones on our newly split ModelNet40-FS, ShapeNet70-FS and ScanObjectNN-FS datasets.
-          </p>
+  </section>
 
-          <p><b>State-of-the-Art 2D FSL on Point Cloud</b></p>
-          <p> We analyze recent state-of-the-art (SOTA) 2D few shot learning methods' performance, when they migrate to few-shot 
-            point cloud classification task on our newly split datasets. Given its simplicity and efficiencies, 
-            we adopt PointNet as backbone for feature embeddings. </p> 
-          
-          <div class="Empirical Study">
-              <table class="table footable footable-1 breakpoint-lg" style="display: table;">
-              <thead>
-                <tr class="footable-header">
-                <th rowspan = "2" align-items="center" style="display: table-cell;"> Method</th>
-                <th colspan = "2" style="display: table-cell;">ModelNet40-FS</th> 
-                <th colspan = "2" style="display: table-cell;">ShapeNet70-FS</th>
-                <th colspan = "2" style="display: table-cell;">ScanObjectNN-FS</th>
-                <th colspan = "3" style="display: table-cell;">Complexity</th><tr>
+  <!-- abstract -->
+  <section class="p-1 justify-content-between align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="text-container">
+          <h2 class="mt-3">Challenges</h2>
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <img class="w-100" src="public/teaser.png">
+            </div>
+          </div>
+          <p class="text-justify fs-6">
+            <b>The challenges of few-shot 3D point cloud classification.</b>
+            <b>(a)</b> is the T-SNE on ImageNet and ShapeNet using pre-trained 2D image
+            and 3D point cloud features respectively with the “Mailbox” class highlighted.
+            <b>(b)</b> shows the mean normalized Euclidean distance between each example
+            and its class prototype in the visual and point cloud embedding space, respectively.
+            The embedding quality of 2D visual domain is much higher than 3D point cloud domains
+            because image-based pre-trained models, such as ResNet, use deeper networks trained
+            on millions of images, whereas point cloud-based models, such as PointNet,
+            use shallower networks trained on only a few hundred point clouds with subtle inter-class
+            differences and high intra-class variations.
+          </p>
+          <h2 class="mt-3">Abstract</h2>
+          <p class="text-justify fs-6">
+            <!-- We study a challenging task, conditional human motion generation, which produces plausible human motion
+            sequences according to various conditional inputs, such as action classes or textual descriptors. -->
+            In recent years, research on few-shot learning (FSL) has been fast-growing in the 2D image domain due to the
+            less requirement for labeled training data and greater generalization for novel classes.
+            However, its application in 3D point cloud data is relatively under-explored. Not only need to distinguish
+            unseen classes as in the 2D domain, 3D FSL is more challenging in terms of irregular structures,
+            subtle inter-class differences, and high intra-class variances {when trained on a low number of data.}
+            Moreover, different architectures and learning algorithms make it difficult to study the effectiveness
+            of existing 2D FSL algorithms when migrating to the 3D domain. In this work, for the first time, we perform
+            systematic and extensive investigations of directly applying recent 2D FSL works to 3D point cloud
+            related backbone networks and thus suggest a strong learning baseline for few-shot 3D point cloud
+            classification. Furthermore, we propose a new network, Point-cloud Correlation Interaction (PCIA),
+            with three novel plug-and-play components called Salient-Part Fusion (SPF) module, Self-Channel Interaction
+            Plus (SCI+) module, and Cross-Instance Fusion Plus (CIF+) module to obtain more representative
+            embeddings and improve the feature distinction. These modules can be inserted into most FSL algorithms with
+            minor changes and significantly improve the performance. Experimental results on three benchmark datasets,
+            ModelNet40-FS, ShapeNet70-FS, and ScanObjectNN-FS, demonstrate that our method achieves state-of-the-art
+            performance for the 3D FSL task.
+          </p>
+        </div>
+      </div>
+      <div class="pt-2">
+        <hr class="divider" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset -->
+  <section class="p-2 justify-content-between align-items-center">
+    <div class="container">
+      <div class="row">
+        <h2 class="mt-3">Datasets for 3D FSL</h2>
+        <p class="text-justify fs-6">
+          We introduce three new splits of 3D datasets for 3D few-shot point cloud classification under different
+          scenarios, including ModelNet40-FS, ShapeNet70-FS and ScanObjectNN-FS.
+          Statistics of the new split datasets for few-shot 3D point cloud classification are listed in the Table 1.
+          More details can be referred to <a href="https://github.com/cgye96/fsl3d">here</a> and our paper.
+        </p>
+        <div class="col-md-8 offset-md-2 table-responsive">
+          <table class=" table footable footable-1" align-items="center">
+            <caption class="text-center">
+              Table 1. Statistics of the new split benchmark datasets for few-shot point
+              cloud classification.</caption>
+            <thead>
+              <tr class=" footable-header">
+                <th style="display: table-cell;">Datasets for 3D FSL</th>
+                <th style="display: table-cell;">Split</th>
+                <th style="display: table-cell;">Train</th>
+                <th style="display: table-cell;">Test</th>
+                <th style="display: table-cell;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <th rowspan="2" class="footable-first-visible" style="display: table-cell;">ModelNet40-FS</th>
+              <td style="display: table-cell;">Classes</td>
+              <td style="display: table-cell;">30</td>
+              <td style="display: table-cell;">10</td>
+              <td style="display: table-cell;">40</td>
+              </tr>
+              <td style="display: table-cell;">Instance</td>
+              <td style="display: table-cell;">9,204</td>
+              <td style="display: table-cell;">3,104</td>
+              <td style="display: table-cell;">12,308</td>
+              </tr>
+
+              <th rowspan="3" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th>
+              <td style="display: table-cell;">Categories</td>
+              <td style="display: table-cell;">34</td>
+              <td style="display: table-cell;">14</td>
+              <td style="display: table-cell;">48</td>
+              <tr>
+                <td style="display: table-cell;">Classes</td>
+                <td style="display: table-cell;">50</td>
+                <td style="display: table-cell;">20</td>
+                <td style="display: table-cell;">70</td>
+              <tr>
+                <td style="display: table-cell;">Instance</td>
+                <td style="display: table-cell;">21,722</td>
+                <td style="display: table-cell;">8,351</td>
+                <td style="display: table-cell;">30,073</td>
+              <tr>
+
+                <th rowspan="5" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th>
+                <td style="display: table-cell;">Classes</td>
+                <td style="display: table-cell;">10</td>
+                <td style="display: table-cell;">5</td>
+                <td style="display: table-cell;">15</td>
+              <tr>
+                <td style="display: table-cell;">Instance (Split 0)</td>
+                <td style="display: table-cell;">50</td>
+                <td style="display: table-cell;">20</td>
+                <td style="display: table-cell;">70</td>
+              <tr>
+                <td style="display: table-cell;">Instance (Split 1)</td>
+                <td style="display: table-cell;">21,722</td>
+                <td style="display: table-cell;">8,351</td>
+                <td style="display: table-cell;">30,073</td>
+              <tr>
+                <td style="display: table-cell;">Instance (Split 2)</td>
+                <td style="display: table-cell;">21,722</td>
+                <td style="display: table-cell;">8,351</td>
+                <td style="display: table-cell;">30,073</td>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="pt-2">
+      <hr class="divider" />
+    </div>
+    </div>
+  </section>
+
+  <!-- empirical study -->
+  <section class="p-2 justify-content-between align-items-center">
+    <div class="container">
+      <div class="row">
+        <h2 class="mt-3">Empirical Study</h2>
+        <p class="text-justify fs-6">
+          We perform empirical study of recent state-of-the-art (SOTA) few-shot learning methods on point cloud data
+          with different
+          popular point-based network backbones on our newly split ModelNet40-FS, ShapeNet70-FS and ScanObjectNN-FS
+          datasets.
+        </p>
+        <div class="col-md-12 table-responsive">
+          <table class="table footable footable-1" align-items="center">
+            <caption class="text-center">
+              Table 2. Few-shot point cloud classification accuracy (%) on three newly
+              proposed benchmark datasets with PointNet as the backbone network.</caption>
+            <thead>
+              <tr class="footable-header">
+                <th rowspan="2" align-items="center" style="display: table-cell;"> Method</th>
+                <th colspan="2" style="display: table-cell;">ModelNet40-FS</th>
+                <th colspan="2" style="display: table-cell;">ShapeNet70-FS</th>
+                <th colspan="2" style="display: table-cell;">ScanObjectNN-FS</th>
+                <th colspan="3" style="display: table-cell;">Complexity</th>
+              <tr>
                 <th align-items="center" style="display: table-cell;">5W-1S</th>
                 <th align-items="center" style="display: table-cell;">5W-5S</th>
                 <th align-items="center" style="display: table-cell;">5W-1S</th>
@@ -245,145 +252,197 @@
                 <th align-items="center" style="display: table-cell;">PN</th>
                 <th align-items="center" style="display: table-cell;">GFLOPs</th>
                 <th align-items="center" style="display: table-cell;">TPS</th>
-              </thead>
-              <tbody>
-                <th style="display: table-cell;">Prototypical Net</th>  </tr>
-                <td style="display: table-cell;">65.31 &plusmn;32we';[qwa9+,./*9/] 0.78</td>
-                <td style="display: table-cell;">30</td>
-                <td style="display: table-cell;">10</td>
-                <td style="display: table-cell;">40</td> </tr>
-                <td style="display: table-cell;">Instance</td>
-                <td style="display: table-cell;">9,204</td>
-                <td style="display: table-cell;">3,104</td>
-                <td style="display: table-cell;">12,308</td></tr>
-    
-                <th rowspan = "4" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th> </tr>
-                <td style="display: table-cell;">Categories</td>
-                <td style="display: table-cell;">34</td>
-                <td style="display: table-cell;">14</td>
-                <td style="display: table-cell;">48</td> <tr>
-                <td style="display: table-cell;">Classes</td>
-                <td style="display: table-cell;">50</td>
-                <td style="display: table-cell;">20</td>
-                <td style="display: table-cell;">70</td> <tr>
-                <td style="display: table-cell;">Instance</td>
-                <td style="display: table-cell;">21,722</td>
-                <td style="display: table-cell;">8,351</td>
-                <td style="display: table-cell;">30,073</td><tr>
-    
-                <th rowspan = "5" class="footable-first-visible" style="display: table-cell;">ShapeNet70-FS</th> </tr>
-                <td style="display: table-cell;">Classes</td>
-                <td style="display: table-cell;">10</td>
-                <td style="display: table-cell;">5</td>
-                <td style="display: table-cell;">15</td> <tr>
-                <td style="display: table-cell;">Instance (Split 0)</td>
-                <td style="display: table-cell;">50</td>
-                <td style="display: table-cell;">20</td>
-                <td style="display: table-cell;">70</td> <tr>
-                <td style="display: table-cell;">Instance (Split 1)</td>
-                <td style="display: table-cell;">21,722</td>
-                <td style="display: table-cell;">8,351</td>
-                <td style="display: table-cell;">30,073</td><tr>
-                <td style="display: table-cell;">Instance (Split 2)</td>
-                <td style="display: table-cell;">21,722</td>
-                <td style="display: table-cell;">8,351</td>
-                <td style="display: table-cell;">30,073</td><tr>
-            </table>
-          </div> 
-          <p> <center>Table I</center></p>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-t="s" data-v="M Prototypical Net (Snell et al., 2017)" id="sjs-A4">Prototypical Net</td>
+                <td data-t="s" data-v="65.31士0.78" id="sjs-B4"><b>65.31士0.78</b></td>
+                <td data-t="s" data-v="79.04士0.54" id="sjs-C4"><u>79.04士0.54</u></td>
+                <td data-t="s" data-v="65.96士0.81" id="sjs-D4"><b>65.96士0.81</b></td>
+                <td data-t="s" data-v="78.77士0.67" id="sjs-E4"><b>78.77士0.67</b></td>
+                <td data-t="s" data-v="44.75士0.31" id="sjs-F4">44.75士0.31</td>
+                <td data-t="s" data-v="59.81 士0.26" id="sjs-G4"><b>59.81 士0.26</b></td>
+                <td data-t="s" data-v="0.15 M" id="sjs-H4"><b>0.15 M</b></td>
+                <td data-t="s" data-v="6.16" id="sjs-I4"><b>6.16</b></td>
+                <td data-t="s" data-v="118.23" id="sjs-J4"><b>118.23</b></td>
+              </tr>
+              <tr>
+                <td data-t="s" data-v="Relation Net (Sung et al, 2018)" id="sjs-A5">Relation Net</td>
+                <td data-t="s" data-v="64.10士0.72" id="sjs-B5">64.10士0.72</td>
+                <td data-t="s" data-v="75.75士0.57" id="sjs-C5">75.75士0.57</td>
+                <td data-t="s" data-v="65.88士0.85" id="sjs-D5"><u>65.88士0.85</u></td>
+                <td data-t="s" data-v="76.25士0.71" id="sjs-E5">76.25士0.71</td>
+                <td data-t="s" data-v="45.32 土 0.32" id="sjs-F5"><u>45.32 土 0.32</u></td>
+                <td data-t="s" data-v="55.43士0.26" id="sjs-G5">55.43士0.26</td>
+                <td data-t="s" data-v="0.28M" id="sjs-H5"><u>0.28M</u></td>
+                <td data-t="s" data-v="6.50" id="sjs-I5">6.50</td>
+                <td data-t="s" data-v="96.03" id="sjs-J5"><u>96.03</u></td>
+              </tr>
+              <tr>
+                <td data-t="s" data-v="FSLGNN (Garcia and Bruna, 2017)" id="sjs-A6">FSLGNN</td>
+                <td data-t="s" data-v="59.69土0.73" id="sjs-B6">59.69土0.73</td>
+                <td data-t="s" data-v="76.06士0.63" id="sjs-C6">76.06士0.63</td>
+                <td data-t="s" data-v="64.98土0.84" id="sjs-D6">64.98土0.84</td>
+                <td data-t="s" data-v="76.14土0.73" id="sjs-E6">76.14土0.73</td>
+                <td data-t="s" data-v="29.91土0.39" id="sjs-F6">29.91土0.39</td>
+                <td data-t="s" data-v="32.77土0.33" id="sjs-G6">32.77土0.33</td>
+                <td data-t="s" data-v="2.23 M" id="sjs-H6">2.23 M</td>
+                <td data-t="s" data-v="10.44" id="sjs-I6">10.44</td>
+                <td data-t="s" data-v="69.02" id="sjs-J6">69.02</td>
+              </tr>
+              <tr>
+                <td data-t="s" data-v="Meta-learner (Ravi and Larochelle, 2017)" id="sjs-A7">Meta-learner</td>
+                <td data-t="s" data-v="58.69士0.81" id="sjs-B7">58.69士0.81</td>
+                <td data-t="s" data-v="76.60士0.65 77.95士0.62" id="sjs-C7">76.60士0.65</td>
+                <td data-t="s" data-v="62.64士0.91" id="sjs-D7">62.64士0.91</td>
+                <td data-t="s" data-v="73.10士0.80" id="sjs-E7">73.10士0.80</td>
+                <td data-t="s" data-v="43.79士0.34" id="sjs-F7">43.79士0.34</td>
+                <td data-t="s" data-v="58.89士0.26" id="sjs-G7">58.89士0.26</td>
+                <td data-t="s" data-v="0.88" id="sjs-H7">0.88 M</td>
+                <td data-t="s" data-v="6.28" id="sjs-I7">6.28</td>
+                <td data-t="s" data-v="9.14" id="sjs-J7">9.14</td>
+              </tr>
+              <tr>
+                <td data-t="s" data-v="MAML" id="sjs-A8">MAML</td>
+                <td data-t="s" data-v="57.58士0.89" id="sjs-B8">57.58士0.89</td>
+                <td data-t="s" data-v="77.95" id="sjs-C8">77.95士0.62</td>
+                <td data-t="s" data-v="59.20" id="sjs-D8">59.20士0.88</td>
+                <td data-t="s" data-v="75.10士0.75" id="sjs-E8">75.10士0.75</td>
+                <td data-t="s" data-v="46.65士0.37" id="sjs-F8"><b>46.65士0.37</b></td>
+                <td data-t="s" data-v="59.55士0.23" id="sjs-G8"><u>59.55士0.23</u></td>
+                <td data-t="s" data-v="0.88" id="sjs-H8">0.68 M</td>
+                <td data-t="s" data-v="6.28" id="sjs-I8"><u>6.19</u></td>
+                <td data-t="s" data-v="38.71" id="sjs-J8">38.71</td>
+              </tr>
+              <tr>
+                <td data-t="s" data-v="MetaOptNet (Lee et al, 2019)" id="sjs-A10">MetaOptNet</td>
+                <td data-t="s" data-v="64.99土0.87" id="sjs-B10"><u>64.99土0.87</u></td>
+                <td data-t="s" data-v="79.54 土0.61" id="sjs-C10"><b>79.54土0.61</b></td>
+                <td data-t="s" data-v="65.08士0.89" id="sjs-D10">65.08士0.89</td>
+                <td data-t="s" data-v="77.81 土0.75" id="sjs-E10"><u>77.81 土0.75</u></td>
+                <td data-t="s" data-v="45.02土0.31" id="sjs-F10">45.02土0.31</td>
+                <td data-t="s" data-v="59.39士0.24" id="sjs-G10">59.39士0.24</td>
+                <td data-t="s" data-v="0.15 M" id="sjs-H10"><b>0.15 M</b></td>
+                <td data-t="s" data-v="6.16" id="sjs-I10"><b>6.16</b></td>
+                <td data-t="s" data-v="11.95" id="sjs-J10">11.95</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <br>
-        <br>
-    
+      </div>
+    </div>
+    <div class="pt-2">
+      <hr class="divider" />
+    </div>
+    </div>
+  </section>
 
 
-    <div class="section">
-        <h5>Materials</h5>
-        <div class="container" style="width:95%">
-          <!-- Icon row -->
-          <div class="row">
-            <div class="two columns">
-              <a href="https://arxiv.org/pdf/1908.04616.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;" src="./source/screenshot_main.png"></a>
-            </div>
-            <div class="two columns">
-              <a href="https://hkust-vgd.github.io/scanobjectnn/assets/iccv19_supp.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;" src="./source/screenshot_supplementary.png"></a>
-            </div>
-            <div class="four columns">
-              <a href="https://hkust-vgd.github.io/scanobjectnn/assets/iccv2019_poster_v2.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 280px;" src="./source/poster_screenshot.png"></a>
-            </div>
-			<div class="two columns" style="padding-left: 12px;">
-              <a href="https://github.com/hkust-vgd/scanobjectnn.git"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 277px;" src="./source/github-logo.png"></a>
-            </div>
-			
+  <!-- Visualization -->
+  <section class="p-4">
+    <div class="container">
+      <h2><b> Visualizations</b></h2>
+      <div class="row mx-auto my-auto justify-content-center text-center">
+        <div class="slick-carousel">
+          <div class="slick-item">
+            <!-- <video autoplay loop playsinline muted height=255px poster="public/text2motion/image1.png"> -->
+            <img style="height:255px" src="public/blank.png">
+            <source src="public/text2motion/media1.mp4" type="video/mp4">
+            </source>
+            </video>
+            <h6>"caption"</h6>
           </div>
-          <!-- Link row -->
-          <div class="row">
-            <div class="two columns">
-              <a href="https://arxiv.org/pdf/1908.04616.pdf">Paper</a>
-            </div>
-            <div class="two columns">
-              <a href="https://hkust-vgd.github.io/scanobjectnn/assets/iccv19_supp.pdf">Supplementary</a>
-            </div>
-            <div class="four columns">
-              <a href="https://hkust-vgd.github.io/scanobjectnn/assets/iccv2019_poster_v2.pdf">Poster</a>
-            </div>
-			<div class="two columns" style="padding-left: 12px;">
-              <a href="https://github.com/hkust-vgd/scanobjectnn.git">Code</a>
-            </div>
+          <div class="slick-item">
+            <img style="height:255px" src="public/blank.png">
+            <source src="public/text2motion/media1.mp4" type="video/mp4">
+            </source>
+            </video>
+            <h6>"caption"</h6>
           </div>
-
-          <br>
-          <div class="row">
-            <div class="two columns">
-              <img style="border: 1px solid #ddd; border-radius: 4px; padding: 6px; width: 256px;" src="./source/perturbations3.png">
-            </div>
+          <div class="slick-item">
+            <img style="height:255px" src="public/blank.png">
+            <source src="public/text2motion/media1.mp4" type="video/mp4">
+            </source>
+            </video>
+            <h6>"caption"</h6>
           </div>
-          <div class="row">
-            <!--<p>Data coming soon! We are currently tidying up the data for public release, if an early access is needed for academic purposes, please send an email to mikacuy@gmail.com.</p>-->
-		<p><u style="color:#007399;">Dataset:</u><br>
-		If you would like to download the ScanObjectNN data, please fill out an agreement to the <a href="https://forms.gle/g29a6qSgjatjb1vZ6">"ScanObjectNN Terms of Use"</a> to get the download link. 
-		It should be noted that the processed and raw data sizes are 13 GB and 197 GB, respectively.</p>
+          <div class="slick-item">
+            <img style="height:255px" src="public/blank.png">
+            <source src="public/text2motion/media1.mp4" type="video/mp4">
+            </source>
+            </video>
+            <h6>"caption"</h6>
+          </div>
+          <div class="slick-item">
+            <img style="height:255px" src="public/blank.png">
+            <source src="public/text2motion/media1.mp4" type="video/mp4">
+            </source>
+            </video>
+            <h6>"caption"</h6>
           </div>
         </div>
       </div>
+      <div class="pt-4">
+        <hr class="divider" />
+      </div>
+    </div>
+  </section>
 
-		<!-- -->
-	<div class="section">
-          <h5>Citation</h5> 
-  <pre style="margin:0"><code>@inproceedings{uy-scanobjectnn-iccv19,
-      title = {Revisiting Point Cloud Classification: A New Benchmark Dataset and Classification Model on Real-World Data},
-      author = {Mikaela Angelina Uy and Quang-Hieu Pham and Binh-Son Hua and Duc Thanh Nguyen and Sai-Kit Yeung},
-      booktitle = {International Conference on Computer Vision (ICCV)},
-      year = {2019}
-  }</code></pre>    			
-		</div>
-		
-        <!-- -->
-        <br> 
-        
-  <div class="section">
-      <h5>Acknowledgements</h5>            
-      <p>
-			We would like to sincerely thank Tan Sang Ha, Fan Wai Shan, Xu Ting Ting, Loh Pei Huan, Luong Van An, Ng Shi Xian Bryden, Li Jingxin and Chiz Huang for helping in the part annotations.
-			</p>
-			
-			<p>
-			This research project is partially supported by an internal grant from HKUST (R9429).
-      </p>
-  </div>
-  </div>
+  <!-- Video -->
+  <section class="p-4 justify-content-between align-items-center">
+    <div class="container">
+      <h2><b>Video</b></h2>
+      <div class="row">
+        <video controls autoplay muted loop poster="public/MLD_Compare_Text.png">
+          <source src="public/MLD_Compare_Text.mp4" type="video/mp4">
+          </source>
+        </video>
+      </div>
+      <div class="pt-4">
+        <hr class="divider" />
+      </div>
+    </div>
+  </section>
 
-    <script type="text/javascript" src="./source/jquery.min.js.下载"></script>
-    <script type="text/javascript" src="./source/footable.min.js.下载"></script>
+  <!-- Paper -->
+  <section class="p-4 justify-content-between align-items-center">
+    <div class="container">
+      <h2><b>Paper</b></h2>
+      <hr>
+      <div>
+        <div class="list-group">
+          <a href="https://arxiv.org/abs/2212.04048" class="list-group-item">
+            <img src="public/paper.png" style="width:100%; margin-right:-20px; margin-top:0px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script type="text/javascript">
-      jQuery(function($){
-          $('.table').footable();
-      });
-    </script>
+  <!-- citation -->
+  <section class="p-4 justify-content-between align-items-center">
+    <div class="container">
+      <h2><b>Citation</b></h2>
+      <div class="row bg-light p-4">
+        <code>
+              @article{ye2022closer,<br>                
+              &nbsp; title &nbsp; &nbsp; = {A Closer Look at Few-Shot 3D Point Cloud Classification},<br>
+              &nbsp; author &nbsp; &nbsp;= {Ye, Chuangguan and Zhu, Hongyuan and Zhang, Bo and Chen, Tao},<br>
+              &nbsp; journal &nbsp; = {International Journal of Computer Vision},<br>
+              &nbsp; pages &nbsp; &nbsp; = {1--24},<br>
+              &nbsp; year&nbsp; &nbsp; &nbsp; = {2022},<br>
+          }</code>
+      </div>
+    </div>
+  </section>
 
-    <!-- End Document
-         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+  <script src="src/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/jquery-3.6.1.min.js"></script>
+  <script src="src/js/slick.min.js"></script>
+  <script src="src/js/slider.js"></script>
+  <script src="src/js/compositionalVideo.js"></script>
+</body>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+<!-- more -->
+
+</html>
